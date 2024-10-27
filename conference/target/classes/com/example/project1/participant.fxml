@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.participantController">
+    <children>
+        <Text layoutX="678.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged In as : Participant" />
+        <Button fx:id="signOutButton" layoutX="665.0" layoutY="467.0" mnemonicParsing="false" onAction="#signOutButtonOnClick" text="Sign Out" />
+        <TableView fx:id="conferenceTable" layoutX="92.0" layoutY="81.0" prefHeight="362.0" prefWidth="664.0">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="109.60000228881836" text="Conference Name" />
+                <TableColumn fx:id="topic" prefWidth="47.99993896484375" text="Topic" />
+                <TableColumn fx:id="price" prefWidth="68.00007629394531" text="Price" />
+                <TableColumn fx:id="place" prefWidth="75.0" text="Place" />
+                <TableColumn fx:id="startDate" prefWidth="75.0" text="Start Date" />
+                <TableColumn fx:id="endDate" prefWidth="75.0" text="End Date" />
+                <TableColumn fx:id="applyStart" prefWidth="99.20001220703125" text="Apply Date Start" />
+                <TableColumn fx:id="applyEnd" prefWidth="108.79998779296875" text="Apply Date End" />
+            </columns>
+        </TableView>
+        <Button fx:id="submit" layoutX="92.0" layoutY="467.0" mnemonicParsing="false" onAction="#submitButtonOnClick" text="Submit" />
+      <Button fx:id="submit1" layoutX="356.0" layoutY="467.0" mnemonicParsing="false" onAction="#submitshow" text="show all the confrence" />
+    </children>
+</AnchorPane>

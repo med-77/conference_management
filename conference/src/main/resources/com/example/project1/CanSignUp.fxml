@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="736.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.CanSignUpController">
+   <children>
+      <Label layoutX="80.0" layoutY="172.0" text="Email :" />
+      <Label layoutX="77.0" layoutY="126.0" text="Name : " />
+      <Text layoutX="151.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up Form" wrappingWidth="286.2890625">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailField" layoutX="151.0" layoutY="168.0" />
+      <TextField fx:id="nameField" layoutX="151.0" layoutY="122.0" />
+      <Button fx:id="submitButton" layoutX="138.0" layoutY="437.0" mnemonicParsing="false" onAction="#submitButtonOnClick" text="Submit" />
+      <Button fx:id="backButtonMain" layoutX="258.0" layoutY="437.0" mnemonicParsing="false" onAction="#backButtonMainOnClick" text="Back To Main Menu" />
+      <TextField fx:id="institutionField" layoutX="151.0" layoutY="213.0" />
+      <Label layoutX="63.0" layoutY="217.0" text="Institution :" />
+      <TextField fx:id="passwordField" layoutX="151.0" layoutY="266.0" />
+      <Label layoutX="63.0" layoutY="270.0" text="Password :" />
+      <TextField fx:id="clefField" layoutX="151.0" layoutY="323.0" />
+      <Label layoutX="63.0" layoutY="327.0" text="Clef :" />
+   </children>
+</AnchorPane>

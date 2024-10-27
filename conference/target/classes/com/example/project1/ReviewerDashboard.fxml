@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.ReviewerDashboardController">
+    <children>
+        <Text layoutX="627.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged In As: Reviewer" />
+        <Label fx:id="outputPaperLabel" layoutX="13.0" layoutY="140.0" prefHeight="372.0" prefWidth="188.0" />
+        <Text layoutX="297.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score : " />
+        <RadioButton fx:id="excellRButton" layoutX="350.0" layoutY="315.0" mnemonicParsing="false" text="Accepted" />
+        <RadioButton fx:id="goodRButton" layoutX="352.0" layoutY="344.0" mnemonicParsing="false"  text="Rejected" />
+        <Button fx:id="submitPaperStatusButton" layoutX="359.0" layoutY="385.0" mnemonicParsing="false" onAction="#submitPaperStatusButtonOnClick" text="Submit" />
+        <Button fx:id="signOutButton" layoutX="689.0" layoutY="46.0" mnemonicParsing="false" onAction="#signOutButtonOnClick" text="Sign Out" />
+        <TableView fx:id="tableAuthor" layoutX="197.0" layoutY="59.0" prefHeight="200.0" prefWidth="402.0">
+            <columns>
+                <TableColumn fx:id="topic" prefWidth="75.0" text="Topic" />
+                <TableColumn fx:id="pdf" prefWidth="75.0" text="PDF" />
+                <TableColumn fx:id="participant" prefWidth="75.0" text="Participant" />
+                <TableColumn fx:id="status" prefWidth="176.0000061035156" text="Status" />
+            </columns>
+        </TableView>
+      <Button layoutX="292.0" layoutY="259.0" mnemonicParsing="false" onAction="#showallthearticales" prefHeight="26.0" prefWidth="188.0" text="show all the articales" />
+    </children>
+</AnchorPane>
